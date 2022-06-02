@@ -3972,3 +3972,15 @@ LANDING YATCHS
 .btn-about-hero:hover {
   color: #9CD8D5;
 }
+
+.select-style{
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 100%; 
+  border: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+}

@@ -65,24 +65,33 @@
     <link rel="stylesheet" id="fontawesome-css-css" href="./assets/lib/fontawesome/css/fontawesome.min.css"
         type="text/css" media="all">
     <script src="./assets/lib/fontawesome/js/fontawesome.min.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./assets/lib/owlcarousel/assets/owl.carousel.min.css">
-    <script src="./assets/lib/owlcarousel/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="./assets/lib/owlcarousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="./assets/lib/owlcarousel/assets/owl.theme.default.min.css">
+    <script src="./assets/lib/owlcarousel/owl.carousel.js"></script>
     <script>
-        $(document).ready(function() { 
-           $("#owl-slider").owlCarousel({
-                navigation : true, // Show next and prev buttons
-                slideSpeed : 300,
-                paginationSpeed : 400,
-                singleItem:true,
-                // Navigation
-                navigationText : ["Anterior","Siguiente"],
-                rewindNav : true,
-                scrollPerPage : true,
-                //Pagination
-                pagination : true,
-                paginationNumbers: false
-            });
-        });
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            // margin: 10,
+            // nav: true,
+            // animateOut: 'fadeInDown',
+            animateOut: 'fadeOut',
+            // fluidSpeed: 4500,
+            autoplaySpeed: 2000,
+            // animateIn: 'flipInX',
+            items: 1
+        })
+
+        //                 $('.owl-carousel').owlCarousel({
+        //                 animateOut: 'fadeOut',
+        //     // animateOut: 'slideOutDown',
+        //     // animateIn: 'flipInX',
+        //     items:1,
+        //     margin:30,
+        //     stagePadding:30,
+        //     // smartSpeed:450
+        // });
     </script>
     <link rel="stylesheet" id="swiper-css-css" href="./assets-page-clone/swiper-bundle.min.css" type="text/css"
         media="all">
@@ -590,9 +599,23 @@
                 <div class="container-fluid p-0">
                     <div class="row no-gutters align-items-center">
                         <div class="two-sections-item col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                            <img loading="lazy" itemprop="logo"
-                                content="https://yamvacationrentals.com/wp-content/uploads/2022/02/Image.jpg"
-                                src="./assets-page-clone/Image.jpg" alt="" class="img-fluid" width="720" height="682">
+                         
+                            <div class="w-100 ">
+            
+                                <div class="w-100 ">
+    
+                                    <div class="owl-carousel owl-theme w-100 ">
+                                        <div class="item ">
+                                            <img src="./assets/imagenes/banners/banner-1.png " class="w-100 " alt=" ">
+                                        </div>
+                                        <div class="item ">
+                                            <img src="./assets/imagenes/banners/banner-11.png " class="w-100 " alt=" ">
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                     
                         </div>
                         <div
                             class="two-sections-item two-section-item-content col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
@@ -1076,12 +1099,27 @@
                                             placeholder="Phone">
                                         <small id="errorPhone" class="invalid-control d-none"></small>
                                     </div>
-                                    <div class="input-field-item col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                        <label for="formRental">Rental Date</label>
-                                        <input id="formRental" name="form-rental" type="date"
+                                    <div class="input-field-item col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                                        <input placeholder="Rental Date" id="formRental" name="form-rental" type="date"
                                             class="form-control landing-footer-input input-form-control"
                                             value="2022-06-01" min="2022-06-01">
                                         <small id="errorRental" class="invalid-control d-none"></small>
+                                        
+                                    </div>
+                                    <div class="input-field-item col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                                        <select class="form-control landing-footer-input input-form-control select-style" name="" id="">
+                                             <option>Selecciona una opción</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-field-item col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                                        <select class="form-control landing-footer-input input-form-control select-style" name="" id="">
+                                             <option>Selecciona una opción</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-field-item col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                                        <select class="form-control landing-footer-input input-form-control select-style" name="" id="" placeholder="ola">
+                                             <option>Selecciona una opción</option>
+                                        </select>
                                     </div>
 
                                     <div class="input-field-item col-12">
